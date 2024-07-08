@@ -1,0 +1,75 @@
+/* Enhanced styling for the Twitter Clone Dashboard */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #1da1f2; /* Twitter blue color */
+    margin-bottom: 10px; /* Add margin at the bottom of the title */
+}
+
+
+
+.post-button {
+    order: -1; /* Move the post button to the top in mobile view */
+}
+
+.post-button,
+.logout-button,
+.profile-button {
+    width: 30%; /* Adjust the percentage as needed */
+    margin: 0 35%; /* Add margin on both sides to prevent buttons from sticking to the edges */
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: #1da1f2;
+    color: white;
+}
+
+
+.tweet-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Add margin at the top of each tweet box */
+    position: relative; /* Position relative for absolute positioning of buttons */
+}
+
+.tweet-author {
+    font-weight: bold;
+}
+
+.tweet-date {
+    color: #777;
+}
+
+.update-button,
+.delete-button {
+    position: absolute;
+    top: 10px; /* Position buttons at the top */
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-button {
+    right: 70px; /* Adjust as needed to position the "Update" button */
+    background-color: green;
+}
+
+.delete-button {
+    right: 10px; /* Position the "Delete" button to the right of the "Update" button */
+    background-color: red;
+}
